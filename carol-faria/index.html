@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carol Faria — Nutricionista na Vila Olímpia, São Paulo | Reeducação alimentar</title>
+<meta name="description" content="Carol Faria, nutricionista (CRN 26.791-SP) na Vila Olímpia, Zona Sul de São Paulo. Consultoria nutricional 100% personalizada, reeducação alimentar, emagrecimento e SOP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --coral:#d98570;--coral-dk:#b9634d;--coral-soft:#f3d9d0;
+    --green:#5c6e57;--cream:#fbf6f1;--ink:#2f2925;--muted:#6f665f;--line:#eaddd4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'DM Sans',sans-serif;color:#2f2925;background:#fbf6f1;line-height:1.65;font-size:17px}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:500;line-height:1.15;color:#2f2925}
+  h1{font-size:clamp(32px,5vw,52px)}
+  h2{font-size:clamp(26px,3.6vw,40px)}
+  h3{font-size:22px}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:#d98570;color:#fff;font-weight:600;padding:15px 28px;border-radius:14px;font-size:16px;transition:.2s;box-shadow:0 8px 20px rgba(185,99,77,.22)}
+  .btn:hover{background:#b9634d;transform:translateY(-2px)}
+  .btn.ghost{background:transparent;color:#b9634d;border:1.6px solid #d98570;box-shadow:none}
+  .btn.ghost:hover{background:#f3d9d0}
+  .kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#b9634d;font-weight:600}
+  section{padding:88px 0}
+  /* header */
+  header{position:sticky;top:0;z-index:100;background:rgba(251,246,241,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1140px;margin:0 auto}
+  .nav img{height:42px}
+  .nav .links{display:flex;gap:28px;font-size:15px;font-weight:500}
+  .nav .links a:hover{color:#b9634d}
+  .nav .btn{padding:11px 20px;font-size:14px}
+  @media(max-width:820px){.nav .links{display:none}}
+  /* hero */
+  .hero{background:linear-gradient(160deg,#fbf6f1 0%,#f6e7df 100%);padding:70px 0 80px}
+  .hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+  .hero p.lead{font-size:19px;color:var(--muted);margin:22px 0 30px;max-width:520px}
+  .hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .micro{font-size:13.5px;color:var(--muted);margin-top:14px}
+  .hero-photo{position:relative}
+  .hero-photo img{width:100%;border-radius:22px;object-fit:cover;aspect-ratio:4/5;box-shadow:0 30px 60px rgba(120,70,55,.18)}
+  .badge{position:absolute;left:-14px;bottom:24px;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:0 14px 30px rgba(0,0,0,.12);display:flex;gap:10px;align-items:center}
+  .badge .stars{color:#e6a400;font-size:15px;letter-spacing:1px}
+  .badge b{font-family:'Fraunces',serif;font-size:22px}
+  @media(max-width:820px){.hero .grid{grid-template-columns:1fr;gap:34px}.hero-photo{order:-1}}
+  /* social proof strip */
+  .proof{background:#5c6e57;color:#fff;padding:26px 0}
+  .proof .row{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;text-align:center}
+  .proof .it b{font-family:'Fraunces',serif;font-size:26px;display:block}
+  .proof .it span{font-size:13.5px;opacity:.85}
+  /* services */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px 26px;transition:.2s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(120,70,55,.1);border-color:var(--coral-soft)}
+  .card .ic{width:52px;height:52px;border-radius:14px;background:#f6e7df;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:16px}
+  .card h3{margin-bottom:8px}
+  .card p{color:var(--muted);font-size:15.5px}
+  @media(max-width:820px){.cards{grid-template-columns:1fr}}
+  /* about */
+  .about{background:#f6e7df}
+  .about .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+  .about img{width:100%;border-radius:20px;box-shadow:0 20px 44px rgba(120,70,55,.16)}
+  .about ul{list-style:none;margin-top:22px;display:grid;gap:12px}
+  .about li{display:flex;gap:12px;font-size:16px}
+  .about li::before{content:"✓";color:#b9634d;font-weight:700}
+  .cred{display:inline-block;margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 18px;font-size:14.5px;font-weight:600;color:var(--green)}
+  @media(max-width:820px){.about .grid{grid-template-columns:1fr;gap:30px}}
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+  .step{padding:8px}
+  .step .n{font-family:'Fraunces',serif;font-size:40px;color:var(--coral);line-height:1}
+  .step h3{font-size:19px;margin:10px 0 6px}
+  .step p{color:var(--muted);font-size:15.5px}
+  @media(max-width:820px){.steps{grid-template-columns:1fr}}
+  /* contact */
+  .contact{background:#5c6e57;color:#fff}
+  .contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  .contact h2{color:#fff}
+  .contact .info{display:grid;gap:14px;margin-top:22px;font-size:16px}
+  .contact .info a:hover{text-decoration:underline}
+  .contact iframe{width:100%;height:300px;border:0;border-radius:18px}
+  .contact .btn{background:#d98570}.contact .btn:hover{background:#c96f58}
+  @media(max-width:820px){.contact .grid{grid-template-columns:1fr;gap:28px}}
+  /* footer */
+  footer{background:#2f2925;color:#d9cfc7;padding:40px 0;font-size:14.5px}
+  footer .grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;align-items:center}
+  footer a:hover{color:#fff}
+  /* float wa */
+  .fab{position:fixed;right:20px;bottom:20px;z-index:200;background:#25d366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.45);font-size:30px;transition:.2s}
+  .fab:hover{transform:scale(1.08)}
+</style>
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <img src="https://nutricionistacarolfaria.com.br/wp-content/uploads/2019/02/logocarolfaria.jpg" alt="Carol Faria Nutricionista">
+    <div class="links">
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre a Carol</a>
+      <a href="#como">Como funciona</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <a class="btn" href="https://wa.me/5511998010101?text=Ol%C3%A1%20Carol!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20consulta." target="_blank">Agendar consulta</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <span class="kicker">Nutrição • Vila Olímpia, São Paulo</span>
+      <h1>A melhor versão de você começa no prato.</h1>
+      <p class="lead">Sou a Carol Faria, sua nutricionista na Zona Sul de SP. Aqui não existe dieta pronta: montamos juntos um plano 100% personalizado para o seu corpo, sua rotina e o seu objetivo — com comida de verdade e resultados que se sustentam.</p>
+      <div class="cta-row">
+        <a class="btn" href="https://wa.me/5511998010101?text=Ol%C3%A1%20Carol!%20Quero%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank">Quero minha avaliação</a>
+        <a class="btn ghost" href="#servicos">Ver como posso ajudar</a>
+      </div>
+      <p class="micro">Atendimento presencial no consultório da Vila Olímpia · resposta rápida no WhatsApp</p>
+    </div>
+    <div class="hero-photo">
+      <img src="https://nutricionistacarolfaria.com.br/wp-content/uploads/2018/02/side-area-img-4-1.jpg" alt="Alimentação saudável e equilibrada — Carol Faria Nutricionista">
+      <div class="badge">
+        <div><span class="stars">★★★★★</span><br><b>4,7</b> <span style="font-family:'DM Sans';font-size:13px;color:#6f665f">· 208 avaliações no Google</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="proof">
+  <div class="wrap row">
+    <div class="it"><b>4,7 ★</b><span>208 avaliações no Google</span></div>
+    <div class="it"><b>100%</b><span>plano personalizado, sem cardápio pronto</span></div>
+    <div class="it"><b>CRN 26.791</b><span>Nutrição + Educação Física</span></div>
+  </div>
+</div>
+
+<section id="servicos">
+  <div class="wrap">
+    <span class="kicker">Nossas soluções para você</span>
+    <h2>Um objetivo, um plano feito só para ele</h2>
+    <p style="color:var(--muted);max-width:640px;margin-top:14px">Cada paciente chega com uma expectativa diferente. O ponto de partida é sempre um programa nutricional exclusivo — daqui, escolhemos o caminho que mais combina com você.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="ic">🥗</div>
+        <h3>Reeducação alimentar</h3>
+        <p>Amor e nutrição na prática: mudança de hábitos que cabe na sua vida, para você comer bem sem sofrimento — praticante de academia ou não.</p>
+      </div>
+      <div class="card">
+        <div class="ic">💪</div>
+        <h3>Emagrecimento & composição corporal</h3>
+        <p>Perda de gordura, definição ou ganho de massa muscular, com acompanhamento de perto e ajustes ao longo do caminho.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🌸</div>
+        <h3>Nutrição na SOP</h3>
+        <p>Cuidado dedicado para mulheres com Síndrome dos Ovários Policísticos, unindo saúde física e mental na estratégia alimentar.</p>
+      </div>
+    </div>
+    <div style="margin-top:34px"><a class="btn" href="https://wa.me/5511998010101?text=Ol%C3%A1%20Carol!%20Quero%20saber%20qual%20servi%C3%A7o%20%C3%A9%20melhor%20para%20mim." target="_blank">Descobrir o ideal para mim</a></div>
+  </div>
+</section>
+
+<section id="sobre" class="about">
+  <div class="wrap grid">
+    <img src="https://nutricionistacarolfaria.com.br/wp-content/uploads/2018/02/side-area-img-4-1.jpg" alt="Carol Faria Nutricionista">
+    <div>
+      <span class="kicker">Quem cuida de você</span>
+      <h2>Olá, eu sou a Carol</h2>
+      <p style="color:var(--muted);margin-top:16px">Minha maior satisfação é ver o resultado da dieta no corpo e na saúde dos meus pacientes — consequência de uma alimentação equilibrada e feita sob medida. Por isso, a consultoria é sempre individual: nada de plano genérico.</p>
+      <ul>
+        <li>Cardápio exclusivo, montado paciente a paciente</li>
+        <li>Foco em saúde física <em>e</em> mental, não só na balança</li>
+        <li>Acompanhamento próximo, do início ao objetivo</li>
+      </ul>
+      <div class="cred">Formada em Nutrição · CRN 26.791-SP · também formada em Educação Física</div>
+    </div>
+  </div>
+</section>
+
+<section id="como">
+  <div class="wrap">
+    <span class="kicker">Como funciona o atendimento</span>
+    <h2>Simples do primeiro contato ao resultado</h2>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>Conversa no WhatsApp</h3><p>Você me conta seu objetivo e tira as primeiras dúvidas. Agendamos sua consulta no consultório da Vila Olímpia.</p></div>
+      <div class="step"><div class="n">02</div><h3>Avaliação completa</h3><p>Entendo sua rotina, seu histórico e suas metas para desenhar um plano que faça sentido para você.</p></div>
+      <div class="step"><div class="n">03</div><h3>Plano e acompanhamento</h3><p>Você recebe um cardápio exclusivo e seguimos juntos, ajustando o caminho até chegar no resultado.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contact">
+  <div class="wrap grid">
+    <div>
+      <span class="kicker" style="color:#f3d9d0">Vamos começar</span>
+      <h2>Sua consulta na Vila Olímpia</h2>
+      <p style="opacity:.9;margin-top:14px">Atendimento presencial no "Cantinho da Nutri", em São Paulo — SP. Fale comigo agora e agende o melhor horário.</p>
+      <div class="info">
+        <div>📍 Consultório na Vila Olímpia, Zona Sul — São Paulo/SP</div>
+        <div>💬 <a href="https://wa.me/5511998010101?text=Ol%C3%A1%20Carol!%20Quero%20agendar%20uma%20consulta." target="_blank">(11) 99801-0101 — WhatsApp</a></div>
+        <div>✉️ <a href="mailto:consulta@nutricionistacarolfaria.com.br">consulta@nutricionistacarolfaria.com.br</a></div>
+        <div>📷 <a href="https://www.instagram.com/nutricionista_carolfaria/" target="_blank">@nutricionista_carolfaria</a></div>
+      </div>
+      <div style="margin-top:26px"><a class="btn" href="https://wa.me/5511998010101?text=Ol%C3%A1%20Carol!%20Quero%20agendar%20minha%20consulta." target="_blank">Agendar pelo WhatsApp</a></div>
+    </div>
+    <iframe loading="lazy" src="https://www.google.com/maps?q=Vila+Ol%C3%ADmpia,+S%C3%A3o+Paulo+SP&output=embed"></iframe>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap grid">
+    <div>Carol Faria · Nutricionista — CRN 26.791-SP · Vila Olímpia, São Paulo/SP</div>
+    <div style="display:flex;gap:18px">
+      <a href="https://www.instagram.com/nutricionista_carolfaria/" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/nutricionistacarolfaria" target="_blank">Facebook</a>
+      <a href="https://wa.me/5511998010101" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/5511998010101?text=Ol%C3%A1%20Carol!%20Vim%20pelo%20site." target="_blank" aria-label="WhatsApp">🟢</a>
+</body>
+</html>
